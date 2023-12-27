@@ -10,3 +10,5 @@ Const - nuk mund te rishkruhet vlera, ka skop blok. Per konstante dhe kur deshir
 
 
 ## Funksionet
+
+## Loopet
