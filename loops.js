@@ -21,14 +21,22 @@ do {
       k++;
       console.log(k);
     }
-
+    
 // Exercieses
+// Ushtrime
 
 // Create a loop that gets two numbers from the user and prints the sum of all numbers between them.
+// Krijo nje loop qe merr dy numra nga perdoruesi dhe nxjerr shumen e te gjithe numrave ndermjet tyre.
 let num1 = parseInt(prompt("Enter first number: ")); 
-let num2 = parseInt(prompt("Enter second number: "));({sigint:true});
+let num2 = parseInt(prompt("Enter second number: "));
 let sum = 0;
+// Handle if the first number is greater than the second number.
+if(num1 > num2) {
+  let temp = num1;
+  num1 = num2;
+  num2 = temp;
+}
 for(let i = num1; i <= num2; i++) {
   sum += i;
 }
-console.log(sum);
+console.log(`The sum of the numbers between the given two is: ${sum}`);
