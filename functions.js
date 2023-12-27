@@ -1,0 +1,2 @@
+//Funksionet ne Javascript
+
