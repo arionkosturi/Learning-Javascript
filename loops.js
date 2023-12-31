@@ -39,4 +39,6 @@ if(num1 > num2) {
 for(let i = num1; i <= num2; i++) {
   sum += i;
 }
-console.log(`The sum of the numbers between the given two is: ${sum}`);
+document.write(`First Number was: ${num1} </br>`);
+document.write(`Second Number was: ${num2}</br>`);
+document.write(`The sum of the numbers between the given numbers is: ${sum}`);
