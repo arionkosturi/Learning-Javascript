@@ -2,7 +2,7 @@
 // Funksionet ne Javascript
 
 
-// Function Expressions
+// Function Expressions ose Anonime
 let funksioni = function(emri){
 return "Pershendetje " + emri;
 }
