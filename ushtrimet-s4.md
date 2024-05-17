@@ -44,7 +44,18 @@ function f() {
     // body
   }
 ```
+#### Zakonisht funksionet anonime perdoren si argument brenda nje funksioni tjeter.
+```
 
+
+```
+
+#### Po ashtu i jepet si vlere nje variable ose konstante.
+```
+let funksioni = function(emri){
+return "Pershendetje " + emri;
+}
+```
 # Funksionet me sintakse shigjete / Arrow Functions.
 ##### Kur ka vetem nje parameter nuk vendosen kllapat. Dhe kur kodi ka vetem nje rresht, nuk ka nevoje per **return**.
 ```
