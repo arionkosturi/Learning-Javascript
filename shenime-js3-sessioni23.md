@@ -217,3 +217,4 @@ g('Arta')();
 ```console
 Pershendetje Arta.
 ```
+## Funksion qe e pranon nje funksion dhe e kthen nje funksion.
