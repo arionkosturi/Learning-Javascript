@@ -74,6 +74,18 @@ const zbritja = function(x,y) {
 zbritja(10,4); //6
 ```
 
+#### Qe nje funksion anonim te qendroje i pavarur e fusim ne kllapa (). Pra e bejme wrap
+```
+(function() {
+  console.log('Hi from an. f.')
+});
+```
+#### Per ta aktivizuar funksionin shtojme () mbrapa
+```
+(function() {
+  console.log('Hi from an. f.')
+})();
+```
 # Funksionet me sintakse shigjete / Arrow Functions.
 ##### Kur ka vetem nje parameter nuk vendosen kllapat. Dhe kur kodi ka vetem nje rresht, nuk ka nevoje per **return**.
 ```
