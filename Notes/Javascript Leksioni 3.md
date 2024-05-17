@@ -162,7 +162,7 @@ pjesto(mbledhje(10,2),8); // 1.5
 # Funksionet e Rendit te Larte
 # Higher-Order Functions
 
-### Merr si parameter nje funksion ose kthen nje funksion. Ose te kombinim i te dyjave.
+### Merr si parameter nje funksion ose kthen nje funksion. Ose kombinim i te dyjave.
 #### Jane funksione qe bejne veprime brenda funksioneve te tjera.
 
 ### Funksioni g pranon si argument nje funksion tjeter
