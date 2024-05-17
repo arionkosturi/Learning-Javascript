@@ -21,9 +21,32 @@ Const - nuk mund te rishkruhet vlera, ka skop blok. Per konstante dhe kur deshir
 nga nje funksion.</br>
 
 
-## Funksionet
 
-## Loopet
+# Loopet
+
+### Llogarit fuqine a^b
+```
+let a=2;
+let b=3;
+let i=0;
+let p=1;
+
+for (i; i<b; i++) {
+  p *= a;
+  console.log(p);
+}
+```
+### Llogarit Faktorialin 5! = 5*4*3*2*1
+```
+let x=5;
+let j=1;
+let f=1;
+
+for (j; j<=x; j++) {
+  f *=j;
+}
+```
+
 ### Loop qe numeron nga 0 deri ne 10
 ```
 for (let i = 0; i <= 10; i++) {
@@ -41,8 +64,8 @@ for (let i=0; i<=n; i++)
   }
 ```
 
-### While loops
-#### While the condition is TRUE, run the program.
+### While Loop
+#### Perderisa kushti eshte TRUE, ekzekuto kodin.
 ```
   let k=0;
    while (k < 10) {   
@@ -51,7 +74,7 @@ for (let i=0; i<=n; i++)
     }
 ```
 ### Do While loop
-### Be careful with this one because, unlike while, it will always run at least once and then checks if the condition is true.
+#### Duhet pasur kujdes kur perdoret do-while pasi programi e ben nje cikel pastaj kontrollon nese kushti eshte i vertete.
 ```
 let j = 0;
 do {
@@ -59,3 +82,6 @@ do {
   console.log(j);
 } while (j <= 0);    
 ```
+
+
+## Funksionet
