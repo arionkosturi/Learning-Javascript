@@ -21,8 +21,7 @@ console.log(pjesto(3,0)); /* Nuk lejohet pjestimi me zero! */
 console.log(pjesto(4,2)); /* 2 */
 ```
 ## Fusha e qasshmerise ne funksion.
-##### Variablat dhe konstantet e definuara **BRENDA** funksionit **JANE** te qasshme vetem brenda tij. 
-##### Variablat dhe konstantet e definuara **BRENDA** funksionit **NUK JANE** te qasshme vetem brenda tij. 
+##### Variablat dhe konstantet e definuara **BRENDA** funksionit **JANE** te qasshme vetem brenda tij. Variablat dhe konstantet e definuara **BRENDA** funksionit **NUK JANE** te qasshme vetem brenda tij. 
 ### Pra cdo gje qe definohet brenda funksionit mbetet e qasshme brenda funksionit por jo jashte tij!
 ```
 function f() {
@@ -36,4 +35,16 @@ function f() {
  console.log(x); /* x is not defined */
  console.log(y); /* y is not defined */
  console.log(z); /* z is not defined */
+```
+
+## Funksionet me sintakse shigjete / Arrow Functions.
+####
+
+##### Kur ka vetem nje parameter nuk vendosen kllapat. Dhe kur kodi ka vetem nje rresht, nuk ka nevoje per **return**.
+```
+param => expression
+```
+#### Kur ka disa parametra, duhen kllapat. Parametrat ndahen me presje. Kur kodi ka vetem nje rresht, nuk ka nevoje per **return**.
+```
+(param1, paramN) => expression
 ```
