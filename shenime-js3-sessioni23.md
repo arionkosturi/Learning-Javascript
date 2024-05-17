@@ -139,3 +139,11 @@ var power = (x,y) => {
 ```
 var power = (x,y) => Math.pow(x,y);
 ```
+## Ushtime me funksionet me sintakse shigjete
+
+### Funksion qe ben mbledhjen e dy parametrave
+
+```
+const mbledhje = (x,y) => x + y;
+console.log(mbledhje(10,12)); //22
+```
