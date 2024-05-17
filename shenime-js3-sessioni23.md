@@ -56,6 +56,7 @@ g( function() {
 ```
 
 #### Po ashtu i jepet si vlere nje variable ose konstante.
+#### Function Expressions
 ```
 let funksioni = function(emri){
 return "Pershendetje " + emri;
