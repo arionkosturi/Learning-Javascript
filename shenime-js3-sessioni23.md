@@ -128,3 +128,14 @@ param => expression
 (param1, paramN) => expression
 ```
 
+### Shembulli me funksion me sintakse shigjete.
+```
+var power = (x,y) => {
+  return Math.pow(x,y);
+}
+```
+#### eshte i njejte me
+
+```
+var power = (x,y) => Math.pow(x,y);
+```
