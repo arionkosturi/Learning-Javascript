@@ -6,7 +6,7 @@
 const n=20;
 for (let i=0; i<=n; i++)
   if (i % 2 ==0 ) {
-    console.log(i);
+    console.log(i); /* 0,2,4,6,8,10,12,14,16,18,20*/
   }
 ```
 ## Quiz 2
@@ -18,5 +18,6 @@ function pjesto (a,b) {
   return a/b
 }
 console.log(pjesto(3,0)); /* Nuk lejohet pjestimi me zero! */
+console.log(pjesto(4,2)); /* 2 */
 ```
 
