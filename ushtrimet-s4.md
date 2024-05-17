@@ -12,7 +12,7 @@ for (let i=0; i<=n; i++)
 ## Quiz 2
 ### Te krijohet nje funksion qe pranon dy parametra, a dhe b.
 #### Funksioni duhet te beje pjestimin e dy numrave, nese pjestuesi eshte 0, funksioni duhet te nxjerre daljen "Nuk lejohet pjestimi me zero!"
-```console
+```
 function pjesto (a,b) {
   if (b==0) return 'Nuk lejohet pjestimi me zero!'
   return a/b
@@ -20,4 +20,20 @@ function pjesto (a,b) {
 console.log(pjesto(3,0)); /* Nuk lejohet pjestimi me zero! */
 console.log(pjesto(4,2)); /* 2 */
 ```
+## Fusha e qasshmerise ne funksion.
+##### Variablat dhe konstantet e definuara BRENDA funksionit JANE te qasshme vetem brenda tij. 
 
+##### Variablat dhe konstantet e definuara BRENDA funksionit NUK JANE te qasshme vetem brenda tij. 
+```
+function f() {
+  let x = 10;
+  var y = 20;
+  const z = 30;
+  console.log(x,y,z); /*10 20 30 */
+
+ }
+ f();
+ console.log(x); /* x is not defined */
+ console.log(y); /* y is not defined */
+ console.log(z); /* z is not defined */
+```

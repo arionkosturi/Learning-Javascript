@@ -16,3 +16,5 @@ function pjesto (a,b) {
   return a/b
 }
 console.log(pjesto(3,0)); /* Nuk lejohet pjestimi me zero! */
+
+
