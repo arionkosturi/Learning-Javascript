@@ -202,7 +202,7 @@ console.log(g('Arta'));
 ```
 ### Per ta aktivizuar duhen shtuar kllapat ()
 ```
-console.log(g('Arta'));
+console.log(g('Arta')());
 ```
 #### Dalja
 ```console
