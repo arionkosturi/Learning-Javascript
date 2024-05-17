@@ -46,7 +46,15 @@ function f() {
 ```
 #### Zakonisht funksionet anonime perdoren si argument brenda nje funksioni tjeter.
 ```
+function g(f) {
+  f();
+}
 
+g(
+  function() {
+  console.log('Hi from f()')
+  }
+); // Hi from f()
 
 ```
 
