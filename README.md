@@ -40,3 +40,22 @@ for (let i=0; i<=n; i++)
     console.log(i);
   }
 ```
+
+### While loops
+#### While the condition is TRUE, run the program.
+```
+  let k=0;
+   while (k < 10) {   
+      k++;
+      console.log(k);
+    }
+```
+### Do While loop
+### Be careful with this one because, unlike while, it will always run at least once and then checks if the condition is true.
+```
+let j = 0;
+do {
+  j += 1;
+  console.log(j);
+} while (j <= 0);    
+```
