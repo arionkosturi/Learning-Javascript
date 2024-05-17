@@ -96,6 +96,17 @@ function() {
   console.log('Hi from an. f.')
 })();
 ```
+#### Nese e therrasim pa i dhene parameter.
+```
+(function(name) {
+  console.log('Hi from ' + name )
+})();
+```
+#### Dalja do te jete Hi from undefined.
+```console
+ Hi from undefined
+```
+
 #### Shembull duke i dhene parametra funksionit.
 ```
 (function(name) {
