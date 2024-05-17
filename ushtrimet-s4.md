@@ -80,7 +80,7 @@ function() {
 }
 ```
 #### Do te ankohet interpretuesi, pasi nuk i kemi dhene emer funksionit.
-```bash
+```console
  Function statements require a function name
 ```
 
