@@ -17,6 +17,6 @@ function pjesto (a,b) {
   if (b==0) return 'Nuk lejohet pjestimi me zero!'
   return a/b
 }
-console.log(pjesto(3,0)); // Nuk lejohet pjestimi me zero!
+console.log(pjesto(3,0)); /* Nuk lejohet pjestimi me zero! */
 ```
 
