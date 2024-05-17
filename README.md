@@ -36,7 +36,7 @@ for (i; i<b; i++) {
   console.log(p);
 }
 ```
-### Llogarit Faktorialin 5! = 5*4*3*2*1
+### Llogarit Faktorialin 5! = 5x4x3x2x1
 ```
 let x=5;
 let j=1;
