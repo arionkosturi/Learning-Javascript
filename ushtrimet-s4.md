@@ -1,5 +1,4 @@
-# Shenime dhe ushtrime nga JS, sesioni 23.
-
+# Shenime dhe Ushtrime nga Javascript, Sesioni 23.
 
 ## Quiz 1
 #### Nje Unaze/loop qe printon numrat cift nga 0 deri ne "n"
@@ -12,12 +11,12 @@ for (let i=0; i<=n; i++)
 ```
 ## Quiz 2
 ### Te krijohet nje funksion qe pranon dy parametra, a dhe b.
-### Funksioni duhet te beje pjestimin e dy numrave, nese pjestuesi eshte 0, funksioni duhet te nxjerre daljen "Nuk lejohet pjestimi me zero!"
+#### Funksioni duhet te beje pjestimin e dy numrave, nese pjestuesi eshte 0, funksioni duhet te nxjerre daljen "Nuk lejohet pjestimi me zero!"
 ```
-function pjestimi (a,b) {
+function pjesto (a,b) {
   if (b==0) return 'Nuk lejohet pjestimi me zero!'
   return a/b
 }
-console.log(pjestimi(3,0));
+console.log(pjesto(3,0)); // Nuk lejohet pjestimi me zero!
 ```
 
