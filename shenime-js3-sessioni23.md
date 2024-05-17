@@ -55,8 +55,7 @@ g( function() {
   } ); // Hi from f()
 ```
 
-#### Po ashtu i jepet si vlere nje variable ose konstante.
-#### Function Expressions
+#### Po ashtu i jepet si vlere nje variable ose konstante. Ne te tilla raste mund te marre edhe emrin "Function Expression".
 ```
 let funksioni = function(emri){
 return "Pershendetje " + emri;
