@@ -183,11 +183,11 @@ function g(name) {
 }
 g('Arta');
 ```
-### Dalja nuk kthen gje.
+#### Dalja nuk kthen gje.
 ```console
 
 ```
-### Nese i shtojme console.log
+#### Nese i shtojme console.log
 ```
 function g(name) {
   return function () {
@@ -196,24 +196,24 @@ function g(name) {
 }
 console.log(g('Arta'));
 ```
-### Dalja.
+##### Dalja.
 ```console
 [Function (anonymous)]
 ```
-### Per ta aktivizuar duhen shtuar kllapat ()
+#### Per ta aktivizuar duhen shtuar kllapat ()
 ```
 console.log(g('Arta')());
 ```
-#### Dalja
+##### Dalja
 ```console
 Pershendetje Arta
 undefined
 ```
-### Qe te jete dalja e sakte:
+#### Qe te jete dalja e sakte:
 ```
 g('Arta')();
 ```
-#### Dalja
+##### Dalja
 ```console
 Pershendetje Arta.
 ```
