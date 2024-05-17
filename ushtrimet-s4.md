@@ -86,6 +86,17 @@ zbritja(10,4); //6
   console.log('Hi from an. f.')
 })();
 ```
+#### Shembull duke i dhene parametra funksionit.
+```
+(function(name) {
+  console.log('Hi from ' + name )
+})('Arta');
+```
+#### Dalja
+```console
+ Hi from Arta
+```
+
 # Funksionet me sintakse shigjete / Arrow Functions.
 ##### Kur ka vetem nje parameter nuk vendosen kllapat. Dhe kur kodi ka vetem nje rresht, nuk ka nevoje per **return**.
 ```
