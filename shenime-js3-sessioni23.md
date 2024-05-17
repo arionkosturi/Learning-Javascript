@@ -145,10 +145,10 @@ var power = (x,y) => Math.pow(x,y);
 
 ```
 const mbledhje = (x,y) => x + y;
-console.log(mbledhje(10,12)); //22
+console.log(mbledhje(10,12)); // 22
 ```
 
-### Funksionin me sintakse shigjete t'ia japim si funksion nje funkioni tjeter:
+### Funksionin me sintakse shigjete mund t'ia japim si parameter nje funkioni tjeter:
 ```
 let mbledhje = (x,y) => x + y;
 
