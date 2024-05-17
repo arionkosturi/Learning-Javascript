@@ -159,3 +159,61 @@ function pjesto (a,b) {
 pjesto(mbledhje(10,2),6); // 2
 pjesto(mbledhje(10,2),8); // 1.5
 ```
+# Funksionet e Rendit te Larte
+# Higher-Order Functions
+
+### Merr si parameter nje funksion ose kthen nje funksion. Ose te kombinim i te dyjave.
+#### Jane funksione qe bejne veprime brenda funksioneve te tjera.
+
+### Funksioni g pranon si argument nje funksion tjeter
+```
+function g(f) {
+  f();
+}
+g(function() {
+  console.log('Pershendetje')
+})
+```
+### Shembull tjeter.
+```
+function g(name) {
+  return function () {
+    console.log('Pershendetje' + name);
+  }
+}
+g('Arta');
+```
+### Dalja nuk kthen gje.
+```console
+
+```
+### Nese i shtojme console.log
+```
+function g(name) {
+  return function () {
+    console.log('Pershendetje' + name);
+  }
+}
+console.log(g('Arta'));
+```
+### Dalja.
+```console
+[Function (anonymous)]
+```
+### Per ta aktivizuar duhen shtuar kllapat ()
+```
+console.log(g('Arta'));
+```
+#### Dalja
+```console
+Pershendetje Arta
+undefined
+```
+### Qe te jete dalja e sakte:
+```
+g('Arta')();
+```
+#### Dalja
+```console
+Pershendetje Arta.
+```
