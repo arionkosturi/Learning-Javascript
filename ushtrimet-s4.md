@@ -50,12 +50,9 @@ function g(f) {
   f();
 }
 
-g(
-  function() {
+g( function() {
   console.log('Hi from f()')
-  }
-); // Hi from f()
-
+  } ); // Hi from f()
 ```
 
 #### Po ashtu i jepet si vlere nje variable ose konstante.
