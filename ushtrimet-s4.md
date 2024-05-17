@@ -73,6 +73,16 @@ const zbritja = function(x,y) {
 ```
 zbritja(10,4); //6
 ```
+### Kur therrasim nje funksion anonim pa e lidhur me nje variabel ose konstante.
+```
+function() {
+  console.log('Hi from an. f.');
+}
+```
+#### Do te ankohet interpretuesi, pasi nuk i kemi dhene emer funksionit.
+```bash
+ Function statements require a function name
+```
 
 #### Qe nje funksion anonim te qendroje i pavarur e fusim ne kllapa (). Pra e bejme wrap
 ```
