@@ -36,10 +36,16 @@ function f() {
  console.log(y); /* y is not defined */
  console.log(z); /* z is not defined */
 ```
+# Funksionet Anonime.
+### Funksionet qe nuk kane emer, jane funksione anonime!
 
-## Funksionet me sintakse shigjete / Arrow Functions.
-####
+```
+  function() {
+    // body
+  }
+```
 
+# Funksionet me sintakse shigjete / Arrow Functions.
 ##### Kur ka vetem nje parameter nuk vendosen kllapat. Dhe kur kodi ka vetem nje rresht, nuk ka nevoje per **return**.
 ```
 param => expression
