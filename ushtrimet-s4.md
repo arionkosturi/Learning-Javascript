@@ -56,6 +56,19 @@ let funksioni = function(emri){
 return "Pershendetje " + emri;
 }
 ```
+
+### Shembull me funksion anonim.
+```
+const zbritja = function(x,y) {
+  console.log(x,y);
+}
+```
+##### Aktivizimi i funksionit behet nepermjet emrit te konstantes.
+
+```
+zbritja(10,4); //6
+```
+
 # Funksionet me sintakse shigjete / Arrow Functions.
 ##### Kur ka vetem nje parameter nuk vendosen kllapat. Dhe kur kodi ka vetem nje rresht, nuk ka nevoje per **return**.
 ```
