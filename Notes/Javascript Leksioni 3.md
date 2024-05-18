@@ -259,7 +259,7 @@ console.log(g(function() { return 20 })); /* Kthen dyfishin e 20. Pra 40. */
 ### Shembull
 #### Nje rast ideal eshte perdorimi i funksionit rekursiv per llogaritjen e faktorialit te nje numri.
 
-```
+```console
   function factorial(n) {
       if (n<=1) return 1;
       else return n * factorial(n-1);
@@ -270,3 +270,5 @@ console.log(g(function() { return 20 })); /* Kthen dyfishin e 20. Pra 40. */
 ```console
 120
 ```
+### Shembull me Vargun e Fibonaccit
+
