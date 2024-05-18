@@ -2,7 +2,7 @@
 
 ## Quiz 1
 #### Nje Unaze/loop qe printon numrat cift nga 0 deri ne "n"
-```bash
+```js
 const n=20;
 for (let i=0; i<=n; i++)
   if (i % 2 ==0 ) {
@@ -12,7 +12,7 @@ for (let i=0; i<=n; i++)
 ## Quiz 2
 ### Te krijohet nje funksion qe pranon dy parametra, a dhe b.
 #### Funksioni duhet te beje pjestimin e dy numrave, nese pjestuesi eshte 0, funksioni duhet te nxjerre daljen "Nuk lejohet pjestimi me zero!"
-```bash
+```js
 function pjesto (a,b) {
   if (b==0) return 'Nuk lejohet pjestimi me zero!'
   return a/b
@@ -23,7 +23,7 @@ console.log(pjesto(4,2)); /* 2 */
 ## Fusha e qasshmerise ne funksion.
 ##### Variablat dhe konstantet e definuara **BRENDA** funksionit **JANE** te qasshme vetem brenda tij. Variablat dhe konstantet e definuara **BRENDA** funksionit **NUK JANE** te qasshme vetem brenda tij. 
 ### Pra cdo gje qe definohet brenda funksionit mbetet e qasshme brenda funksionit por jo jashte tij!
-```bash
+```js
 function f() {
   let x = 10;
   var y = 20;
@@ -39,13 +39,13 @@ function f() {
 # Funksionet Anonime.
 ### Funksionet qe nuk kane emer, jane funksione anonime!
 
-```
+```js
   function() {
     // body
   }
 ```
 #### Zakonisht funksionet anonime perdoren si argument brenda nje funksioni tjeter.
-```bash
+```js
 function g(f) {
   f();
 }
@@ -56,24 +56,24 @@ g( function() {
 ```
 
 #### Po ashtu i jepet si vlere nje variable ose konstante. Ne te tilla raste mund te marre edhe emrin "Function Expression".
-```bash
+```js
 let funksioni = function(emri){
 return "Pershendetje " + emri; }
 ```
 
 ### Shembull me funksion anonim.
-```
+```js
 const zbritja = function(x,y) {
   console.log(x,y);
 }
 ```
 ##### Aktivizimi i funksionit behet nepermjet emrit te konstantes.
 
-```bash
+```js
 zbritja(10,4); //6
 ```
 ### Kur therrasim nje funksion anonim pa e lidhur me nje variabel ose konstante.
-```bash
+```js
 function() {
   console.log('Hi from an. f.');
 }
@@ -84,19 +84,19 @@ function() {
 ```
 
 #### Qe nje funksion anonim te qendroje i pavarur e fusim ne kllapa (). Pra e bejme wrap
-```bash
+```js
 (function() {
   console.log('Hi from an. f.')
 });
 ```
 #### Per ta aktivizuar funksionin shtojme () mbrapa
-```bash
+```js
 (function() {
   console.log('Hi from an. f.')
 })();
 ```
 #### Nese e therrasim pa i dhene parameter.
-```bash
+```js
 (function(name) {
   console.log('Hi from ' + name )
 })();
@@ -107,7 +107,7 @@ function() {
 ```
 
 #### Shembull duke i dhene parametra funksionit.
-```bash
+```js
 (function(name) {
   console.log('Hi from ' + name )
 })('Arta');
@@ -119,36 +119,36 @@ function() {
 
 # Funksionet me sintakse shigjete / Arrow Functions.
 ##### Kur ka vetem nje parameter nuk vendosen kllapat. Dhe kur kodi ka vetem nje rresht, nuk ka nevoje per **return**.
-```
+```js
 param => expression
 ```
 #### Kur ka disa parametra, duhen kllapat. Parametrat ndahen me presje. Kur kodi ka vetem nje rresht, nuk ka nevoje per **return**.
-```
+```js
 (param1, paramN) => expression
 ```
 
 ### Shembulli me funksion me sintakse shigjete.
-```bash
+```js
 var power = (x,y) => {
   return Math.pow(x,y);
 }
 ```
 #### eshte i njejte me
 
-```bash
+```js
 var power = (x,y) => Math.pow(x,y);
 ```
 ## Ushtime me funksionet me sintakse shigjete
 
 ### Funksion qe ben mbledhjen e dy parametrave
 
-```bash
+```js
 const mbledhje = (x,y) => x + y;
 console.log(mbledhje(10,12)); // 22
 ```
 
 ### Funksionin me sintakse shigjete mund t'ia japim si parameter nje funkioni tjeter:
-```bash
+```js
 let mbledhje = (x,y) => x + y;
 
 function pjesto (a,b) {
@@ -165,7 +165,7 @@ pjesto(mbledhje(10,2),8); // 1.5
 #### Jane funksione qe bejne veprime brenda funksioneve te tjera.
 
 ### Funksioni g pranon si argument nje funksion tjeter
-```bash
+```js
 function g(f) {
   f();
 }
@@ -174,7 +174,7 @@ g(function() {
 })
 ```
 ### Shembull tjeter.
-```bash
+```js
 function g(name) {
   return function () {
     console.log('Pershendetje' + name);
@@ -187,7 +187,7 @@ g('Arta');
 
 ```
 #### Nese i shtojme console.log
-```bash
+```js
 function g(name) {
   return function () {
     console.log('Pershendetje' + name);
@@ -200,7 +200,7 @@ console.log(g('Arta'));
 [Function (anonymous)]
 ```
 #### Per ta aktivizuar duhen shtuar kllapat ()
-```bash
+```js
 console.log(g('Arta')());
 ```
 ##### Dalja
@@ -209,7 +209,7 @@ Pershendetje Arta
 undefined
 ```
 #### Qe te jete dalja e sakte:
-```bash
+```js
 g('Arta')();
 ```
 ##### Dalja
@@ -219,7 +219,7 @@ Pershendetje Arta.
 ## Funksion qe e pranon nje funksion dhe e kthen nje funksion.
 
 
-```
+```js
 function g(f) {
   return function() {
     f();
@@ -234,7 +234,7 @@ Hi
 ```
 ### Shpjegim
 #### Funksioni g(f) e pranon si argument nje funksion tjeter.
-```bash
+```js
 function(){ console.log('Hi') }
 ```
 #### Me kllapat () aktivizohet funksioni anonim qe po kthehet permes return.
@@ -245,7 +245,7 @@ g(function(){ console.log('Hi') })();
 ## Ushtrim me funksion te rendit te larte.
 ### Funksion g(f) qe pranon funksionin f si argument dhe kthen dyfishin e vleres qe kthehet nga funksioni f. 
 
-```bash
+```js
 function g(f) {
     return 2 * f();
 }
@@ -259,7 +259,7 @@ console.log(g(function() { return 20 })); //Kthen dyfishin e 20. Pra 40.
 ### Shembull
 #### Nje rast ideal eshte perdorimi i funksionit rekursiv per llogaritjen e faktorialit te nje numri.
 
-```bash
+```js
   function factorial(n) {
       if (n<=1) return 1;
       else return n * factorial(n-1);
@@ -274,7 +274,7 @@ console.log(g(function() { return 20 })); //Kthen dyfishin e 20. Pra 40.
 #### Funksioni kthen vleren e elementit ne vargun e Fibonaccit ne pozicionin e "n".
 ##### 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
 
-```bash
+```js
 function f(n) {
   if (n == 0) {
     return 0;
@@ -291,7 +291,7 @@ console.log(f(7)); // 13
 ### "Rest Parameter" mundeson reprezantimin e nje numri te pakufishem te argumenteve te qasshme permes nje emri (parametri)
 
 #### Sintaksa
-```bash
+```js
 function f(a,b, ...theArgs) {
   // ...
 }
