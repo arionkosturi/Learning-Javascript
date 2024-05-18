@@ -162,7 +162,7 @@ pjesto(mbledhje(10,2),8); // 1.5
 # Funksionet e Rendit te Larte
 # Higher-Order Functions
 
-### Merr si parameter nje funksion ose kthen nje funksion. Ose kombinim i te dyjave.
+### Merr si parameter nje funksion ose kthen nje funksion. Ose te kombinim i te dyjave.
 #### Jane funksione qe bejne veprime brenda funksioneve te tjera.
 
 ### Funksioni g pranon si argument nje funksion tjeter
@@ -218,3 +218,37 @@ g('Arta')();
 Pershendetje Arta.
 ```
 ## Funksion qe e pranon nje funksion dhe e kthen nje funksion.
+
+
+```
+function g(f) {
+  return function() {
+    f();
+  }
+}
+g(function(){ console.log('Hi') })();
+```
+##### Dalje
+```console
+Hi
+```
+### Shpjegim
+#### Funksioni g(f) e pranon si argument nje funksion tjeter.
+```
+function(){ console.log('Hi') }
+```
+#### Me kllapat () aktivizohet funksioni anonim qe po kthehet permes return.
+```
+g(function(){ console.log('Hi') })();
+```
+
+## Ushtrim me funksion te rendit te larte.
+### Funksion g(f) qe pranon funksionin f si argument dhe kthen dyfishin e vleres qe kthehet nga funksioni f. 
+
+```
+function g(f) {
+    return 2 * f();
+}
+
+console.log(g(function() { return 20 })); /* Kthen dyfishin e 20. Pra 40. */
+```
