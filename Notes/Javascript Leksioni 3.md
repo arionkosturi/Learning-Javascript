@@ -321,11 +321,18 @@ const vektori = [1, 3, 8, "abc", false];
 5. ### Indeksi i elementit te pare eshte 0, ndersa i elementit te fundit eshte N-1, ku N eshte numri i elementeve te vektorit.
 
 ## Vektoret ne Javascript mund te definohen ne dy menyra.
-### 1. Permes kllapave
+### 1. Permes kllapave. __Kjo eshte menyra me e perdorur!__
 ```js
 var students = [];
 ```
-2. ### Si Objekt
+### 2. Si Objekt
 ```js
 var students = new Array();
+```
+## Qasja ne elementet e vektorit
+### Elementeve u qasemi permes indeksit perkates.
+```js
+var students = ["Arta", "Artani", "Drita", "Jetoni"];
+    // indekset:  0        1         2        3
+console.log(students[2]);
 ```
