@@ -313,9 +313,19 @@ sum(1,2,3) // [1, 2, 3]
 ```js
 const vektori = [1, 3, 8, "abc", false];
 ```
-## Perkufizime per VEKTORET
+## Informacion per VEKTORET
 1. ### Vektoret jane tipe te perbera te te dhenave.
 2. ### Ne vetvete mund te mbajne me shume vlera.
 3. ### Elementet e vektorit mun te jene te tipeve te ndryshme.
 4. ### Cdo element ka indeksin perkates.
 5. ### Indeksi i elementit te pare eshte 0, ndersa i elementit te fundit eshte N-1, ku N eshte numri i elementeve te vektorit.
+
+## Vektoret ne Javascript mund te definohen ne dy menyra.
+1. ### Permes kllapave
+```js
+var students = [];
+```
+2. ### Si Objekt
+```js
+var students = new Array();
+```
