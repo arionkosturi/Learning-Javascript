@@ -302,7 +302,14 @@ function f(a,b, ...theArgs) {
 function sum(...args) {
   console.log(args)
 }
+
 sum(1) // [1]
 sum(1,2,3) // [1, 2]
 sum(1,2,3) // [1, 2, 3]
+```
+# VEKTORET
+# ARRAYS
+### Vektoret jane nje koleksion ose bashkesi vlerash nen nje emer te vetem.
+```js
+const vektori = [1, 3, 8, "abc", false];
 ```
