@@ -245,12 +245,12 @@ g(function(){ console.log('Hi') })();
 ## Ushtrim me funksion te rendit te larte.
 ### Funksion g(f) qe pranon funksionin f si argument dhe kthen dyfishin e vleres qe kthehet nga funksioni f. 
 
-```
+```bash
 function g(f) {
     return 2 * f();
 }
 
-console.log(g(function() { return 20 })); /* Kthen dyfishin e 20. Pra 40. */
+console.log(g(function() { return 20 })); //Kthen dyfishin e 20. Pra 40.
 ```
 # Funksionet Rekursive
 1. ### Funksionet rekursive jane funksione qe therrasin vetveten.
