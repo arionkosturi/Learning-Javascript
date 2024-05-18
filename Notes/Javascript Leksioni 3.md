@@ -334,5 +334,11 @@ var students = new Array();
 ```js
 var students = ["Arta", "Artani", "Drita", "Jetoni"];
     // indekset:  0        1         2        3
-console.log(students[2]);
+console.log(students[2]); // Drita
+```
+### Kur dalim jashte indekseve kemi __undefined__.
+```js
+  let nums = [9, 7, 3, 4, 12, 6];
+// indekset   0  1  2  3  4   5
+console.log(nums[6]); // undefined
 ```
