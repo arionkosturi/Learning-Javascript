@@ -219,13 +219,12 @@ Pershendetje Arta.
 ## Funksion qe e pranon nje funksion dhe e kthen nje funksion.
 
 
-```
+```bash
 function g(f) {
   return function() {
     f();
-    }
   }
-
+}
 g(function(){ console.log('Hi') })();
 ```
 ##### Dalje
@@ -290,19 +289,4 @@ console.log(f(7)); // 13
 # Rest Parameters.
 ### "Rest Parameter" mundeson reprezantimin e nje numri te pakufishem te argumenteve te qasshme permes nje emri (parametri)
 
-#### Sintaksa
-```bash
-function f(a,b, ...theArgs) {
-  // ...
-}
-```
-### Shembull me Rest Parameters
-#### Duhet mbajtur mend qe rezultati i rest params eshte nje __VEKTOR__ ose __ARRAY__.
-```js
-function sum(...args) {
-  console.log(args)
-}
-sum(1) // [1]
-sum(1,2,3) // [1, 2]
-sum(1,2,3) // [1, 2, 3]
-```
+##### ora 1:35:50

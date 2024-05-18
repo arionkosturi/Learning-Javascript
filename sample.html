@@ -1,0 +1,236 @@
+<h1>Shenime dhe Ushtrime nga Javascript, Sesioni 23.</h1>
+<h2>Quiz 1</h2>
+<h4>Nje Unaze/loop qe printon numrat cift nga 0 deri ne &quot;n&quot;</h4>
+<pre><code class="language-bash">const n=20;
+for (let i=0; i&lt;=n; i++)
+  if (i % 2 ==0 ) {
+    console.log(i); // 0,2,4,6,8,10,12,14,16,18,20
+  }
+</code></pre>
+<h2>Quiz 2</h2>
+<h3>Te krijohet nje funksion qe pranon dy parametra, a dhe b.</h3>
+<h4>Funksioni duhet te beje pjestimin e dy numrave, nese pjestuesi eshte 0, funksioni duhet te nxjerre daljen &quot;Nuk lejohet pjestimi me zero!&quot;</h4>
+<pre><code class="language-bash">function pjesto (a,b) {
+  if (b==0) return 'Nuk lejohet pjestimi me zero!'
+  return a/b
+}
+console.log(pjesto(3,0)); /* Nuk lejohet pjestimi me zero! */
+console.log(pjesto(4,2)); /* 2 */
+</code></pre>
+<h2>Fusha e qasshmerise ne funksion.</h2>
+<h5>Variablat dhe konstantet e definuara <strong>BRENDA</strong> funksionit <strong>JANE</strong> te qasshme vetem brenda tij. Variablat dhe konstantet e definuara <strong>BRENDA</strong> funksionit <strong>NUK JANE</strong> te qasshme vetem brenda tij.</h5>
+<h3>Pra cdo gje qe definohet brenda funksionit mbetet e qasshme brenda funksionit por jo jashte tij!</h3>
+<pre><code class="language-bash">function f() {
+  let x = 10;
+  var y = 20;
+  const z = 30;
+  console.log(x,y,z); // 10 20 30
+
+ }
+ f();
+ console.log(x); // x is not defined 
+ console.log(y); // y is not defined
+ console.log(z); // z is not defined
+</code></pre>
+<h1>Funksionet Anonime.</h1>
+<h3>Funksionet qe nuk kane emer, jane funksione anonime!</h3>
+<pre><code>  function() {
+    // body
+  }
+</code></pre>
+<h4>Zakonisht funksionet anonime perdoren si argument brenda nje funksioni tjeter.</h4>
+<pre><code class="language-bash">function g(f) {
+  f();
+}
+
+g( function() {
+  console.log('Hi from f()')
+  } ); // Hi from f()
+</code></pre>
+<h4>Po ashtu i jepet si vlere nje variable ose konstante. Ne te tilla raste mund te marre edhe emrin &quot;Function Expression&quot;.</h4>
+<pre><code class="language-bash">let funksioni = function(emri){
+return &quot;Pershendetje &quot; + emri; }
+</code></pre>
+<h3>Shembull me funksion anonim.</h3>
+<pre><code>const zbritja = function(x,y) {
+  console.log(x,y);
+}
+</code></pre>
+<h5>Aktivizimi i funksionit behet nepermjet emrit te konstantes.</h5>
+<pre><code class="language-bash">zbritja(10,4); //6
+</code></pre>
+<h3>Kur therrasim nje funksion anonim pa e lidhur me nje variabel ose konstante.</h3>
+<pre><code class="language-bash">function() {
+  console.log('Hi from an. f.');
+}
+</code></pre>
+<h4>Do te ankohet interpretuesi, pasi nuk i kemi dhene emer funksionit.</h4>
+<pre><code class="language-console"> Function statements require a function name
+</code></pre>
+<h4>Qe nje funksion anonim te qendroje i pavarur e fusim ne kllapa (). Pra e bejme wrap</h4>
+<pre><code class="language-bash">(function() {
+  console.log('Hi from an. f.')
+});
+</code></pre>
+<h4>Per ta aktivizuar funksionin shtojme () mbrapa</h4>
+<pre><code class="language-bash">(function() {
+  console.log('Hi from an. f.')
+})();
+</code></pre>
+<h4>Nese e therrasim pa i dhene parameter.</h4>
+<pre><code class="language-bash">(function(name) {
+  console.log('Hi from ' + name )
+})();
+</code></pre>
+<h4>Dalja do te jete Hi from undefined.</h4>
+<pre><code class="language-console"> Hi from undefined
+</code></pre>
+<h4>Shembull duke i dhene parametra funksionit.</h4>
+<pre><code class="language-bash">(function(name) {
+  console.log('Hi from ' + name )
+})('Arta');
+</code></pre>
+<h4>Dalja</h4>
+<pre><code class="language-console"> Hi from Arta
+</code></pre>
+<h1>Funksionet me sintakse shigjete / Arrow Functions.</h1>
+<h5>Kur ka vetem nje parameter nuk vendosen kllapat. Dhe kur kodi ka vetem nje rresht, nuk ka nevoje per <strong>return</strong>.</h5>
+<pre><code>param =&gt; expression
+</code></pre>
+<h4>Kur ka disa parametra, duhen kllapat. Parametrat ndahen me presje. Kur kodi ka vetem nje rresht, nuk ka nevoje per <strong>return</strong>.</h4>
+<pre><code>(param1, paramN) =&gt; expression
+</code></pre>
+<h3>Shembulli me funksion me sintakse shigjete.</h3>
+<pre><code class="language-bash">var power = (x,y) =&gt; {
+  return Math.pow(x,y);
+}
+</code></pre>
+<h4>eshte i njejte me</h4>
+<pre><code class="language-bash">var power = (x,y) =&gt; Math.pow(x,y);
+</code></pre>
+<h2>Ushtime me funksionet me sintakse shigjete</h2>
+<h3>Funksion qe ben mbledhjen e dy parametrave</h3>
+<pre><code class="language-bash">const mbledhje = (x,y) =&gt; x + y;
+console.log(mbledhje(10,12)); // 22
+</code></pre>
+<h3>Funksionin me sintakse shigjete mund t'ia japim si parameter nje funkioni tjeter:</h3>
+<pre><code class="language-bash">let mbledhje = (x,y) =&gt; x + y;
+
+function pjesto (a,b) {
+  console.log(a / b);
+}
+
+pjesto(mbledhje(10,2),6); // 2
+pjesto(mbledhje(10,2),8); // 1.5
+</code></pre>
+<h1>Funksionet e Rendit te Larte</h1>
+<h1>Higher-Order Functions</h1>
+<h3>Merr si parameter nje funksion ose kthen nje funksion. Ose te kombinim i te dyjave.</h3>
+<h4>Jane funksione qe bejne veprime brenda funksioneve te tjera.</h4>
+<h3>Funksioni g pranon si argument nje funksion tjeter</h3>
+<pre><code class="language-bash">function g(f) {
+  f();
+}
+g(function() {
+  console.log('Pershendetje')
+})
+</code></pre>
+<h3>Shembull tjeter.</h3>
+<pre><code class="language-bash">function g(name) {
+  return function () {
+    console.log('Pershendetje' + name);
+  }
+}
+g('Arta');
+</code></pre>
+<h4>Dalja nuk kthen gje.</h4>
+<pre><code class="language-console">
+</code></pre>
+<h4>Nese i shtojme console.log</h4>
+<pre><code class="language-bash">function g(name) {
+  return function () {
+    console.log('Pershendetje' + name);
+  }
+}
+console.log(g('Arta'));
+</code></pre>
+<h5>Dalja.</h5>
+<pre><code class="language-console">[Function (anonymous)]
+</code></pre>
+<h4>Per ta aktivizuar duhen shtuar kllapat ()</h4>
+<pre><code class="language-bash">console.log(g('Arta')());
+</code></pre>
+<h5>Dalja</h5>
+<pre><code class="language-console">Pershendetje Arta
+undefined
+</code></pre>
+<h4>Qe te jete dalja e sakte:</h4>
+<pre><code class="language-bash">g('Arta')();
+</code></pre>
+<h5>Dalja</h5>
+<pre><code class="language-console">Pershendetje Arta.
+</code></pre>
+<h2>Funksion qe e pranon nje funksion dhe e kthen nje funksion.</h2>
+<pre><code class="language-bash">function g(f) {
+  return function() {
+    f();
+  }
+}
+g(function(){ console.log('Hi') })();
+</code></pre>
+<h5>Dalje</h5>
+<pre><code class="language-console">Hi
+</code></pre>
+<h3>Shpjegim</h3>
+<h4>Funksioni g(f) e pranon si argument nje funksion tjeter.</h4>
+<pre><code class="language-bash">function(){ console.log('Hi') }
+</code></pre>
+<h4>Me kllapat () aktivizohet funksioni anonim qe po kthehet permes return.</h4>
+<pre><code class="language-bash">g(function(){ console.log('Hi') })();
+</code></pre>
+<h2>Ushtrim me funksion te rendit te larte.</h2>
+<h3>Funksion g(f) qe pranon funksionin f si argument dhe kthen dyfishin e vleres qe kthehet nga funksioni f.</h3>
+<pre><code class="language-bash">function g(f) {
+    return 2 * f();
+}
+
+console.log(g(function() { return 20 })); //Kthen dyfishin e 20. Pra 40.
+</code></pre>
+<h1>Funksionet Rekursive</h1>
+<ol>
+<li>
+<h3>Funksionet rekursive jane funksione qe therrasin vetveten.</h3>
+</li>
+<li>
+<h3>Kane te definuar piken ku duhet te perfundojne ekzekutimin, dhe menyren e thirrjes rekursive.</h3>
+</li>
+</ol>
+<h3>Shembull</h3>
+<h4>Nje rast ideal eshte perdorimi i funksionit rekursiv per llogaritjen e faktorialit te nje numri.</h4>
+<pre><code class="language-bash">  function factorial(n) {
+      if (n&lt;=1) return 1;
+      else return n * factorial(n-1);
+  } 
+  console.log(factorial(5));
+</code></pre>
+<h5>Dalja</h5>
+<pre><code class="language-console">120
+</code></pre>
+<h3>Shembull me Vargun e Fibonaccit</h3>
+<h4>Funksioni kthen vleren e elementit ne vargun e Fibonaccit ne pozicionin e &quot;n&quot;.</h4>
+<h5>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144</h5>
+<pre><code class="language-bash">function f(n) {
+  if (n == 0) {
+    return 0;
+  }
+  if (n &lt; 2) return 1;
+  return f(n-1) + f(n-2);
+
+}
+console.log(f(3)); // 2
+console.log(f(7)); // 13
+</code></pre>
+<h1>Parametrat e mbetura</h1>
+<h1>Rest Parameters.</h1>
+<h3>&quot;Rest Parameter&quot; mundeson reprezantimin e nje numri te pakufishem te argumenteve te qasshme permes nje emri (parametri)</h3>
+<h5>ora 1:35:50</h5>
