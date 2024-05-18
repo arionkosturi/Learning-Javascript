@@ -6,7 +6,7 @@
 const n=20;
 for (let i=0; i<=n; i++)
   if (i % 2 ==0 ) {
-    console.log(i); /* 0,2,4,6,8,10,12,14,16,18,20 */
+    console.log(i); // 0,2,4,6,8,10,12,14,16,18,20
   }
 ```
 ## Quiz 2
@@ -270,4 +270,23 @@ console.log(g(function() { return 20 })); //Kthen dyfishin e 20. Pra 40.
 120
 ```
 ### Shembull me Vargun e Fibonaccit
+#### Funksioni kthen vleren e elementit ne vargun e Fibonaccit ne pozicionin e "n".
+##### 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
 
+```bash
+function f(n) {
+  if (n == 0) {
+    return 0;
+  }
+  if (n < 2) return 1;
+  return f(n-1) + f(n-2);
+
+}
+console.log(f(3)); // 2
+console.log(f(7)); // 13
+```
+# Parametrat e mbetura
+# Rest Parameters.
+### "Rest Parameter" mundeson reprezantimin e nje numri te pakufishem te argumenteve te qasshme permes nje emri (parametri)
+
+##### ora 1:35:50
