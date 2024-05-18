@@ -255,4 +255,13 @@ console.log(g(function() { return 20 })); /* Kthen dyfishin e 20. Pra 40. */
 # Funksionet Rekursive
 1. ### Funksionet rekursive jane funksione qe therrasin vetveten.
 2. ### Kane te definuar piken ku duhet te perfundojne ekzekutimin, dhe menyren e thirrjes rekursive.
-## 
+
+#### Shembull
+#### Nje rast ideal eshte perdorimi i funksionit rekursiv per llogaritjen e faktorialit te nje numri.
+
+```
+  function factorial(n) {
+    if (n<=1) return 1;
+    return n * factorial(n-1);
+  } 
+```
