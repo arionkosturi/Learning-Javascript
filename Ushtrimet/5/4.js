@@ -10,5 +10,6 @@ function f(x, name, ...args) {
   // '200john'
   }
   }
-  const {x, name, b} = f(10, 'john', 's', 23, false, true);
+  const result = {x, name, b} = f(10, 'john', 's', 23, false, true);
+  // [ 's', 23, false, true ] sundefined 200john
   // {x: ['s', 23, false, true], name: 'sundefinded', b: '200john'}
