@@ -4,7 +4,6 @@ let result = [];
 
 function _map(array,dyfisho) {
   for (let i=0; i< array.length; i++) {
-   dyfisho result;
 }
 }
 const dyfisho = function() {
