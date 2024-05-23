@@ -23,9 +23,9 @@ const PI = 3.14
 //Dalja:
 //Arta kalkuloi perimetrin e rrethit me rreze 5 cm dhe fitoi rezultatin 31.400000000000002
 ```
-4. Të shkruhet funksioni i cili llogaritë faktorielin e një numri – në rast se n është numër negativ
-gjuhet përjashtimi “Nuk lejohet perdorimi i vlerave negative”, nëse n është më i madh se 10 të
-gjuhet përjashtimi “N duhet të jetë më i vogël se 10”.
+##### 4. Të shkruhet funksioni i cili llogaritë faktorielin e një numri – në rast se n është numër negativ gjuhet përjashtimi “Nuk lejohet perdorimi i vlerave negative”, nëse n është më i madh se 10 tëgjuhet përjashtimi “N duhet të jetë më i vogël se 10”.
+DONE
+
 ```js 
 function factorial(n) {
 // kodi juaj
