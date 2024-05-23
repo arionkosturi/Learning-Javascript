@@ -3,7 +3,7 @@ DETYRA
 function _map(arr, f) { // kodi juaj }
 d.m.th funksioni f thirret për çdo element të arr.
 
-2. Të krijohen konstantet a dhe b që marrin vlerat 10 dhe ‘john’ përmes të destrukturimit të vektorit
+#### 2. Të krijohen konstantet a dhe b që marrin vlerat 10 dhe ‘john’ përmes të destrukturimit të vektorit
 DONE
 ```js
 function f() {
@@ -14,7 +14,7 @@ return [[3, 4], ['john'], 10, '10', 'john']
 console.log(a) // 10
 console.log(b) // 'john'
 ```
-3. Të gjenerohet dalja si më poshtë duke përdorur konceptin template literal
+#### 3. Të gjenerohet dalja si më poshtë duke përdorur konceptin template literal
 DONE!
 ```js
 let name = ‘Arta’
