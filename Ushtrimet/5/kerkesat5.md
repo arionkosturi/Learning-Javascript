@@ -12,7 +12,8 @@ function _reduce(…) {
 ```
 3. Te krijohet klasa Circle e cila llogarite perimetrin dhe syprinen e rrethit – rrezja r ruhet si veti e klases.
 
-4. Cila eshte vlera e x, name, dhe b? - Done
+##### 4. Cila eshte vlera e x, name, dhe b? 
+Done
 ```js
 function f(x, name, ...args) {
 return {
@@ -23,7 +24,8 @@ b: 200 + name
 }
 const {x, name, b} = f(10, 'john', 's', 23, false, true)
 ```
-5. Cila eshte vlera e x, y, dhe z? - Done
+##### 5. Cila eshte vlera e x, y, dhe z? 
+Done
 ```js
 function f() {
 return {
