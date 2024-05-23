@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qasja ne elementet e dom-it</title>
+</head>
+<body>
+  <h1>Welcome</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, sapiente. Sapiente, eveniet! Cupiditate eveniet doloribus dignissimos. Magnam error quaerat atque!</p>
+  <a href="/read-more-text" class="btn">Read More</a>
+  <a href="/close-window" id="close-btn">Close</a>
+</body>
+<script>
+  // permes id
+    const close_btn = document.getElementById('close-btn')
+  // permes emrit te tagut
+    const links = document.getElementsByTagName('a')
+    for (link of links) {
+      console.log(link.getAttribute('href'));
+    }
+  // permes klases
+    const btns =document.getElementsByClassName('btn')
+    console.log(btns.length);
+  // permes selektorit
+
+
+</script>
+</html>
